@@ -14,6 +14,7 @@ resource "azurerm_app_service_plan" "example" {
   }
 }
 
+
 resource "azurerm_app_service" "webapp" {
   name                = var.app_service_name
   location            = data.azurerm_resource_group.example.location
